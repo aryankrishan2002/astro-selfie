@@ -1,0 +1,43 @@
+/* --- basic layout --- */
+body{
+  margin:0;
+  background:#000;
+  color:#fff;
+  font-family:sans-serif;
+  text-align:center;
+}
+
+h1{margin:16px 0 8px;font-size:1.6rem;}
+
+video,#overlay{
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+}
+
+video{
+  width:80vw;max-width:480px;
+  border-radius:12px;
+}
+
+#overlay{
+  width:80vw;max-width:480px;
+  pointer-events:none;        /* let taps go through */
+}
+
+button{
+  position:fixed;
+  bottom:24px;left:50%;
+  transform:translateX(-50%);
+  background:#ff5c00;
+  color:#fff;
+  border:none;border-radius:40px;
+  padding:12px 28px;
+  font-size:18px;
+}
+
+.note{
+  position:fixed;
+  bottom:4px;left:0;right:0;
+  font-size:11px;color:#aaa;
+}
